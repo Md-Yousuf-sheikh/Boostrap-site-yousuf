@@ -1,0 +1,501 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;800;900&display=swap');
+
+/*---------Font------------*/
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito', sans-serif;
+}
+body{
+    box-sizing: border-box;
+
+}
+/*==================*/
+/*  header section */
+/*==================*/
+
+#header{
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+    padding: 10px 0px;
+    transition: 00.5s ease all;
+}
+.navbar-brand img{
+    height: 30px;
+    margin: 0;
+    padding: 0;
+}
+.navbar-brand .logo-dark{
+    display: none;
+}
+.navbar-toggler i{
+    width: 40px;
+    height: 100%;
+    color: rgb(253 13 13);
+}
+/*--sticky effect--*/
+#header.sticky {
+    padding: 0px 0px;
+    background-color: white;
+    color: black;
+    transition: 00.5s ease all;
+    box-shadow: 5px 1px 4px #2b28288f;
+}
+#header.sticky ul li a{
+    color: black;
+}
+#header.sticky .logo-dark{
+    display: block;
+}
+#header.sticky .logo-whait{
+    display: none;
+}
+#header.sticky ul li a:hover{
+    color:  #E65F78;
+    transition: 00.5s ease all;
+    transform: translateY( -4px );
+}
+/*----Navbare---*/
+
+#navbarNav ul li a{
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: 'Nunito', sans-serif;
+    padding: 0px 15px;
+}
+#navbarNav ul li a:hover{
+    color: #E65F78;
+    transform: translateY( -4px );
+    transition: 00.5s ease all;
+}
+
+/*==================*/
+/*  banner-section */
+/*==================*/
+
+#banner-section{
+    position: relative;
+    background: url('../images/header-bg.jpg') no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+}
+#banner-section .overlyer {
+    background: #0000009c;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+}
+#banner-section h4{
+    font-size: 28px;
+}
+
+#banner-section .auto-type h1{
+    color: #fff;
+    font-size: 54px;
+    font-weight: 700;
+}
+
+#banner-section .auto-type .typeds{
+    color: #e9e9e9;
+  
+}
+.banner-info{
+    max-width: 500px;
+    color: #ddd;
+    font-size: 16px;
+    font-family: 'Nunito', sans-serif;
+}
+.dewn-cv-btn a{
+    color: #fff;
+    border-radius: 30px ;
+    border: 2px solid #fff;
+    padding: 16px 50px;
+    outline: none; 
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: 0.5s all ease;
+}
+.dewn-cv-btn a:hover{
+    background: #fff;
+    color: black;
+    transition: 0.5s all ease;
+}
+.ounsing-ball{
+    width: 10px;
+    height: 20px;
+    background: #fff;
+    border-radius: 40px;
+}
+.bounsing-ball {
+    margin-top: 9% !important;
+    width: 30px;
+    height: 45px;
+    border: 2px solid #fff;
+    border-radius: 40px;
+    margin: 0 auto;
+    animation-name: bounsing;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite ;
+}
+.bounsing-ball-inner {
+    width: 4px;
+    height: 15px;
+    background: #fff;
+    line-height: 50px;
+    margin: auto;
+    margin-top: 18px;
+    border-radius: 50px;
+}
+/*==================*/
+/*  About-section */
+/*==================*/
+#about-section{
+}
+#about-section img{
+    border: 3px solid #ddd;
+}
+.about-title{
+    color: black;
+    font-weight: 600;
+
+}
+.about-name{
+    color: black;
+    font-weight: 600;
+}
+
+.about-info{
+    color: #7A759A;
+}
+.about-socale ul li{
+    list-style: none;
+    float: left;
+    padding: 0px 5px;
+}
+.about-socale ul li a{
+   font-size: 20px;
+   color: black;
+   display: inline-block;
+   height: 40px;
+   width: 40px;
+   border: 2px solid #ddd;
+   line-height: 40px;
+   text-align: center;
+   border-radius: 50px;
+}
+.about-socale ul li a:hover{
+    color: #E65F78;
+    border: 2px solid #E65F78;
+
+}
+
+/*==================*/
+/*  Sarvices-section */
+/*==================*/
+
+#services-section{
+    background: #F8F9FA;
+}
+
+.sarvices-title{
+    color: #000;
+    font-weight: 700;
+}
+.sarvices-subtitle{
+    margin: 0 auto;
+    color: #7A759A;
+    max-width: 500px;
+}
+
+.service-box{
+    border: 2px solid #E8E8E8;
+    padding: 30px 10px;
+    margin: 10px 0px;
+  }
+.service-box h1 i{
+    color: #E65F78;
+    font-size: 40px;
+    padding: 10px 0px;
+}
+.service-box h2{
+    color: #282529;
+    font-weight: 600;
+    font-size: 26px;
+}
+.service-box p{
+    color: #6C757D;
+    font-size: 17px;
+    padding-bottom: 20px;
+}
+.sarvices-title-border{
+    width: 40px;
+    height: 2px;
+    background: #E65F78;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    transition: 0.5s ease all;
+}
+.service-box:hover .sarvices-title-border{
+    width: 60px;
+    transition: 0.5s ease all;
+}
+/*==================*/
+/*  Hear-me-section */
+/*==================*/
+#hear-section {
+
+}
+#hear-section .hear-title {
+    font-weight: 600;
+}
+#hear-section .hear-btn {
+        margin-bottom: 70px;
+        background: red;
+        color: #fff;
+        padding: 15px 40px;
+}
+
+
+
+/*==================*/
+/*   Client-section */
+/*==================*/
+#client-section{
+    background: #F8F9FA;
+    padding: 50px 0px;
+}
+#client-section .client-title{
+    color: #000;
+    font-weight: 700;
+}
+#client-section .client-subtitle{
+    margin: 0 auto;
+    color: #7A759A;
+    max-width: 500px;
+}
+/*==================*/
+/*   Client-section */
+/*==================*/
+#blog-section{
+    background: #F8F9FA;
+    padding: 50px 0px;
+}
+#blog-section .blog-title{
+    color: #000;
+    font-weight: 700;
+}
+#blog-section .blog-subtitle{
+    margin: 0 auto;
+    color: #7A759A;
+    max-width: 500px;
+}
+#blog-section .card {
+    width: 100%;
+    margin-top: 20px;
+}
+#blog-section .card .card-title{
+    color: #121416;
+    font-weight: 600;
+}
+#blog-section .card .card-date{
+    color: #7A759A;
+}
+#blog-section .card .card-text{
+    color: #6C757D;
+}
+#blog-section .card .read-more{
+    color: #6C75A7;
+    text-decoration: none;
+    font-weight: 700;
+}
+/*==================*/
+/*  Contact-section */
+/*==================*/
+#contact-section .contact-title {
+    color: #000;
+    font-weight: 700;
+}
+#contact-section .contact-subtitle{
+    margin: 0 auto;
+    color: #7A759A;
+    font-size: 18px;
+    max-width: 500px;
+}
+#contact-section .cont-item{
+    padding: 0px 80px ;
+    margin: 20px 0px;
+}
+#contact-section .cont-item i{
+    font-size: 50px;
+    color: #E65F78;
+    padding-bottom: 17px;
+}
+#contact-section .cont-item .cont-item-title{
+    font-size: 20px;
+    font-weight: 600;
+} 
+#contact-section .cont-item .cont-item-info{
+    font-size: 16px;
+    color: #6C757D;
+}
+#contact-section .btn-custom{
+    background: #E65F78;
+    padding: 10px 20px;
+    color: white;
+}
+/*==================*/
+/*  Footer section */
+/*==================*/
+
+#footer-section{
+    text-align: center;
+    background: #282529 !important;
+}
+
+.footer-main ul li{
+    list-style: none;
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+     background: #343434;
+     border-radius: 30px;
+}
+.footer-main ul li a {
+    color: #6C757D;
+}
+
+.footer-main h6{
+     color: #6C757D;
+}
+
+
+
+
+
+
+
+
+
+/*==================*/
+/*  Rasponsive css */
+/*==================*/
+@media (max-width: 996px) {
+    #banner-section .auto-type h1 {
+        font-size: 40px;
+    }
+    .dewn-cv-btn a{
+        padding: 15px 30px;
+        font-size: 16px;
+    }
+
+    .bounsing-ball {
+        margin-top: 94px !important;
+    }
+    #contact-section .cont-item {
+        padding: 0px ;
+        margin: 0px;
+    }
+    
+}
+
+
+
+@media (max-width: 768px){
+    #banner-section .auto-type h1 {
+        font-size: 36px;
+    }
+    .bounsing-ball {
+        width: 23px;
+        height: 36px;
+        margin-top: 94px !important;
+    }
+    .bounsing-ball-inner {
+        width: 3px;
+        height: 9px;
+    }
+    .dewn-cv-btn a{
+        padding: 13px 30px;
+        font-size: 15px;
+    }
+    /*====== About Section=======*/
+    h1.about-title {
+        margin: 20px 0px;
+        font-size: 35px;
+    }
+    h3.about-name {
+        font-size: 25px;
+        padding-bottom: 20px;
+    }
+    /*====== Sarvices Section=======*/
+    .sarvices-title{
+       font-size: 35px;
+    }
+    .sarvices-subtitle{
+        padding: 0px 15px;
+    }
+    /*====== Blog Section=======*/
+    h1.pt-5.pb-3 {
+        font-size: 35px;
+    }
+    #blog-section .blog-title {
+        font-size: 35px;
+    }
+    #blog-section .blog-subtitle {
+      padding: 0px 15px;
+    }
+    /*====== Contact Section=======*/
+    #contact-section .contact-title {
+        color: #000;
+        font-weight: 700;
+        font-size: 35px;
+    }
+    #contact-section .contact-subtitle {
+        padding: 0px 15px;
+    }
+    .cont-item {
+        margin-top: 30px !important;
+    }
+    /*====== Hear Section=======*/
+    
+    #hear-section .hear-title {
+        font-size: 35px;
+    }
+    #hear-section .hear-btn {
+          
+            padding: 10px 30px;
+    }
+}
+
+
+
+
+
+
+
+
+/*==================*/
+/*  @keyframes */
+/*==================*/
+
+@keyframes bounsing {
+  0% { transform: translateY(0);  }
+  25%{transform: translateY(-45px);}
+  50%{transform: translateY(-0px);}
+  65%{transform: translateY(-10px);}
+  75%{transform: translateY(-0px);}
+  80%{transform: translateY(-25);}
+  100%{transform: translateY(-45);}
+}
+
+
+
+
+
+
+
